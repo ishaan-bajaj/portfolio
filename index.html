@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumaraBajaj</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .home {
+            font-family: 'Montserrat Subrayada', sans-serif;
+        }
+
+        section::before {
+            background: url('img/bg.jpg') no-repeat center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+
+        section {
+            /* display: flex; */
+            /* flex-direction: column; */
+            margin-left: 5%;
+            width: 100vw;
+            font-size: 50px;
+            text-align: left;
+            /* border: 2px solid red; */
+            color: white;
+            text-shadow: 4px 4px #00596f;
+        }
+
+        section p {
+            padding: 20px;
+            margin: 0px;
+        }
+
+        .navbar{
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            margin: 0.14vw 0.28vw;
+            height: 6vh;
+            position: fixed;
+            top: 3vh;
+            left: 0vw;
+            right: 0vw;
+            z-index: 1;
+        }
+        .anchortags{
+            align-content: space-around;
+            text-align: center;
+            margin: 0.56vw auto;
+            position: relative;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            z-index: 1;
+        }
+        
+        .navbar a{
+            padding: 0.14vw 1.4vw 0.14vw 1.4vw;
+            margin-left: 45px;
+            margin-right: 45px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.75vw;
+            color: #ece1e1;
+            border: 0.21vw solid white;
+            border-radius: 0.7vw;
+            background-color: #2080ce;
+            transition-property: background-color, font-size, color, box-shadow;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        .navbar a:hover{
+            font-size: 1.96vw;
+            background-color: #00596f;
+            color: white;
+            box-shadow: 0.21vw 0.21vw 0.35vw black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <div class="anchortags">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="connect.html">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+
+        <section>
+            <p class="home" id="hello">
+                Hello.
+            </p>
+            <p class="home" id="ishaan">
+                I am Ishaan Bajaj.
+            </p>
+            <p class="home" id="welcome">
+                Welcome to my website.
+            </p>
+            <p class="home" id="learn">
+                I'm still learning to make one :)
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>
